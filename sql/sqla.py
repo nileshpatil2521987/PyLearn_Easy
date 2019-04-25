@@ -6,8 +6,7 @@ conn = sqlite3.connect("new.db")
 
 cursor = conn.cursor()
 
-cursor.execute('''CREATE TABLE population
-                    (city TEXT, state TEXT, population INT)''')
-
+cursor.execute('''ALTER TABLE population 
+                  ADD zip INT;''')
 
 conn.close()
