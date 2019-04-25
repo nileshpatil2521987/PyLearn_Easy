@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 app.config["DEBUG"] = True
 
-
 @app.route('/')
 @app.route("/hello")
 def hello_world():
